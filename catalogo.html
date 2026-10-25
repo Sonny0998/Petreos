@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo · Pétreos Arte & Arquitectura</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" href="img/marca/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/catalogo.css">
+</head>
+<body>
+  <!-- Barra de herramientas (no se imprime) -->
+  <div class="toolbar">
+    <a href="index.html" class="toolbar__back">← Volver al sitio</a>
+    <label>
+      <span>Categoría</span>
+      <select data-cat><option value="">Todo el catálogo</option></select>
+    </label>
+    <label class="toolbar__check"><input type="checkbox" data-prices checked> Mostrar precios</label>
+    <button type="button" data-print>Imprimir / Guardar PDF</button>
+    <p class="toolbar__hint">En la ventana de impresión elige <strong>“Guardar como PDF”</strong>, tamaño <strong>A4</strong> y activa <strong>“Gráficos de fondo”</strong>.</p>
+  </div>
+
+  <div class="book" data-book>
+    <p class="loading">Cargando catálogo…</p>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="data/catalogo-local.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/catalogo.js"></script>
+</body>
+</html>
